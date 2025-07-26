@@ -39,17 +39,17 @@
 
 | ID     | Title                                                              | Feature       | Status | Related Bugs |
 |--------|--------------------------------------------------------------------|---------------|--------|--------------|
-| TDL#01 | Create todo                                                        | Todo Creation | Ready  |              |
-| TDL#02 | Edit a todo                                                        | Todo Editing  | Ready  |              |
-| TDL#03 | Delete a todo                                                      | Todo Deletion | Ready  | BUG#01       |
-| TDL#04 | Filter todo list by active                                         | Filtering     | Ready  |              |
-| TDL#05 | Filter todo list by completed                                      | Filtering     | Ready  |              |
-| TDL#06 | Item counter shows "1 item left" (1 active todo)                   | Item Counter  | Ready  | BUG#02       |
-| TDL#07 | Item counter shows "2 items left" (2 active todos)                 | Item Counter  | Ready  | BUG#02       |
-| TDL#08 | Item counter shows "1 item left" (1 active todo, 1 completed todo) | Item Counter  | Ready  | BUG#02       |
-| TDL#09 | Item counter shows "0 items left" (2 completed todos)              | Item Counter  | Ready  | BUG#02       |
-| TDL#10 | Clear the todo list                                                | Clear All     | Ready  |              |
-| TDL#11 | Set all todos as completed through batch action                    | Batch Toggle  | Ready  | BUG#04       |
+| TDL#01 | Create todo                                                        | Todo Creation | Pass   |              |
+| TDL#02 | Edit a todo                                                        | Todo Editing  | Pass   |              |
+| TDL#03 | Delete a todo                                                      | Todo Deletion | Fail   | BUG#01       |
+| TDL#04 | Filter todo list by active                                         | Filtering     | Pass   |              |
+| TDL#05 | Filter todo list by completed                                      | Filtering     | Pass   |              |
+| TDL#06 | Item counter shows "1 item left" (1 active todo)                   | Item Counter  | Fail   | BUG#02       |
+| TDL#07 | Item counter shows "2 items left" (2 active todos)                 | Item Counter  | Fail   | BUG#02       |
+| TDL#08 | Item counter shows "1 item left" (1 active todo, 1 completed todo) | Item Counter  | Fail   | BUG#02       |
+| TDL#09 | Item counter shows "0 items left" (2 completed todos)              | Item Counter  | Fail   | BUG#02       |
+| TDL#10 | Clear the todo list                                                | Clear All     | Pass   |              |
+| TDL#11 | Set all todos as completed through batch action                    | Batch Toggle  | Fail   | BUG#04       |
 
 <br/>
 
@@ -77,10 +77,10 @@
 **Preconditions:** A todo exists in the list  
 **Test Data:** Different text than the existing one
 
-| Step | Action                | Expected Result                                                             |
-|------|-----------------------|-----------------------------------------------------------------------------|
-| 1    | Double click the todo | Element should change to an input box with the todo text                    |
-| 2    | Modify text           | Current text should change according to what is input                       |
+| Step | Action                | Expected Result                                                                       |
+|------|-----------------------|---------------------------------------------------------------------------------------|
+| 1    | Double click the todo | Element should change to an input box with the todo text                              |
+| 2    | Modify text           | Current text should change according to what is input                                 |
 | 3    | Press Enter           | Input should change to a read-only text element with same content as specified before |
 
 **Status:**  Pass
