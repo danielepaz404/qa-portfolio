@@ -1,4 +1,35 @@
-# Test Plan
+# To Do List [Manual Testing Study]
+
+<details>
+
+<summary>Table of Contents</summary>
+    
+- [Test Plan](#test-plan)
+- [Features Identified](#features-identified)
+- [Test Case Overview](#test-case-overview)
+- [Test Cases](#test-cases)
+    - [TDL#01 – Create todos](#tdl01--create-todos)
+    - [TDL#02 – Edit a todo](#tdl02--edit-a-todo)
+    - [TDL#03 – Delete a todo](#tdl03--delete-a-todo)
+    - [TDL#04 – Filter todo list by active](#tdl04--filter-todo-list-by-active)
+    - [TDL#05 – Filter todo list by completed](#tdl05--filter-todo-list-by-completed)
+    - [TDL#06 – Item counter displays correct number of active items when there's only one active item](#tdl06--item-counter-displays-correct-number-of-active-items-when-theres-only-one-active-item)
+    - [TDL#07 – Item counter displays correct number of active items when there's multiple active items](#tdl07--item-counter-displays-correct-number-of-active-items-when-theres-multiple-active-items)
+    - [TDL#08 – Item counter displays correct number of active items when there are active and completed todos](#tdl08--item-counter-displays-correct-number-of-active-items-when-there-are-active-and-completed-todos)
+    - [TDL#09 – Item counter displays correct number of active items when there are only completed todos](#tdl09--item-counter-displays-correct-number-of-active-items-when-there-are-only-completed-todos)
+    - [TDL#10 – Clear the todo list](#tdl10--clear-the-todo-list)
+    - [TDL#11 – Set all todos as completed through batch action](#tdl11--set-all-todos-as-completed-through-batch-action)
+- [Bug Reports](#bug-reports)
+    - [BUG#01 – Debug text visible on hover of delete icon](#bug01--debug-text-visible-on-hover-of-delete-icon)
+    - [BUG#02 – Item counter shows wrong number of active elements](#bug02--item-counter-shows-wrong-number-of-active-elements)
+    - [BUG#03 – Batch toggle button needs two clicks to work when all todos are completed](#bug03--batch-toggle-button-needs-two-clicks-to-work-when-all-todos-are-completed)
+    - [BUG#04 – Icon for batch toggle button is misleading](#bug04--icon-for-batch-toggle-button-is-misleading)
+
+</details>
+
+---
+
+## Test Plan
 
 - Goals
     - Test the core functionalities of the [TodoList](https://todolist.james.am/#/) website.
@@ -15,13 +46,9 @@
     - Test cases for black-box testing
     - Bug report if any bugs were found
 
-<br/>
-
 ---
 
-<br/>
-
-### Features Identified
+## Features Identified
 - Todo Creation
 - Todo Editing
 - Todo Deletion
@@ -30,12 +57,10 @@
 - Clear All
 - Batch Completion Toggle
 
-<br/>
-
 ---
 
 
-### Test Case Overview
+## Test Case Overview
 
 | ID     | Title                                                              | Feature       | Status | Related Bugs |
 |--------|--------------------------------------------------------------------|---------------|--------|--------------|
@@ -51,12 +76,10 @@
 | TDL#10 | Clear the todo list                                                | Clear All     | Pass   |              |
 | TDL#11 | Set all todos as completed through batch action                    | Batch Toggle  | Fail   | BUG#04       |
 
-<br/>
-
 ---
 
 
-### Test Cases
+## Test Cases
 
 ### TDL#01 – Create todos
 **Feature:** Todo Creation  
@@ -201,11 +224,9 @@
 **Status:** Fail  
 **Related Bugs:** BUG#04
 
-<br/>
-
 ---
 
-# Bug Reports
+## Bug Reports
 
 ### BUG#01 – Debug text visible on hover of delete icon
 **Feature:** Todo Deletion  
